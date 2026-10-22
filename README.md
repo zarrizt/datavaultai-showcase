@@ -89,6 +89,17 @@ Financial support will not purchase exclusive access to ordinary free-software f
 
 No sponsorship or payment mechanism is currently operational.
 
+## Development Reports
+
+I document the project's technical progress, architectural decisions,
+engineering methodology, and experimental findings.
+
+- [Development Report No. 1 | Architecture, Engineering Methodology, and AI-Assisted Development (October 21, 2026)](reports/2026-10-21-development-methodology.md)
+
+Reports distinguish implemented capabilities, experimental findings,
+and future objectives. Internal test results are identified as such
+until their evidence becomes publicly reproducible.
+
 ## The Road Ahead
 
 The immediate priority is to consolidate a dependable local archival foundation before introducing increasingly sophisticated AI capabilities.
