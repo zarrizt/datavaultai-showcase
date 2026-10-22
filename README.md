@@ -29,6 +29,30 @@ The archival system is designed to remain useful without AI.
 
 Future semantic capabilities are intended to extend the archive, not replace its foundations.
 
+## The First Use Case: Tabletop RPG Research
+
+DataVaultAI began with a concrete research problem: navigating large, fragmented tabletop role-playing game libraries.
+
+Game Masters, Storytellers, and worldbuilders often work across rulebooks, supplements, multiple editions, campaign notes, and difficult scans. In a game such as *Vampire: The Masquerade*, the same rule, character, or setting detail may appear in several publications with different contexts or interpretations.
+
+Finding a passage is only part of the challenge. Equally important is identifying **which source says what, where it says it, and how it relates to other evidence**.
+
+The existing archival foundation addresses parts of this problem through multi-format ingestion, local OCR, preserved originals, traceable source units, lexical search, and human-authored notes linked to documentary evidence. It does not automatically resolve disagreements between editions or determine which interpretation is correct.
+
+### Beyond Books: Forums, Websites, and Wikis (Planned)
+
+Another goal is to bring **user-selected information from forums, websites, and community or official wikis** into the same research workflow.
+
+The intended approach is to extract relevant knowledge, classify its provenance and context, and cross-reference it with documents and notes. The researcher could organize that information **within the relevant project or in the broader archive**, rather than leaving useful discoveries scattered across browser tabs.
+
+For example, a rulebook passage, an official clarification, a community-wiki explanation, a forum discussion, and a personal house rule should remain distinguishable. They may be related, but they do not carry the same evidentiary authority.
+
+Future web references should retain source links and available metadata, identify uncertainty, and be reviewed before becoming durable archive knowledge. The goal is **traceable knowledge extraction, not indiscriminate website mirroring**: respect applicable rights and access restrictions, and prefer structured facts, genuinely transformed notes, and permitted short excerpts over copying entire pages. Web access should be explicit and optional; the local archive should remain useful offline.
+
+**This web-ingestion and classification workflow is not implemented yet.** Existing project and note features operate on locally imported documents. Website, wiki, and forum integration belongs to the future roadmap.
+
+Tabletop RPG research is the original niche, not the intended limit. Similar source-provenance problems arise in historical research, technical reference collections, and other evidence-intensive fields.
+
 ## Development Status
 
 **Active development. Private source repository. No public release available yet.**
