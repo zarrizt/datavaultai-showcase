@@ -35,6 +35,23 @@ The archival system is designed to remain useful without AI.
 
 Future semantic capabilities are intended to extend the archive, not replace its foundations.
 
+## Our Six Commitments
+
+**Evidence-based results · Resilience · Privacy protection · Modularity · Open source · Free forever.**
+
+These commitments define what DataVaultAI is designed to earn through verification, not a claim that every planned capability is already qualified. The [Product Trust Charter](docs/PRODUCT_TRUST_CHARTER.md) in the **private development repository** is the current owner-approved qualification record; the public summary below does not disclose private source code or internal laboratory evidence.
+
+- **Evidence-based results:** verify source identity and freshness, distinguish original evidence from interpretations, and plan a clearly separated diagnostic view for excluded semantic candidates.
+- **Resilience:** prevent silent data loss, preserve committed state and allow only bounded, demonstrably safe automatic recovery.
+- **Privacy protection:** keep core archival work local and offline, with no default telemetry and explicit boundaries for optional external data sharing.
+- **Modularity:** keep the archival core useful without optional AI, GPU or cloud capabilities.
+- **Open source:** provide corresponding source and AGPL-3.0-only license notices when an official software release is published; review third-party dependencies and distribution rights.
+- **Free forever:** offer official **Core** and **AI** editions, if released, without mandatory payment, subscriptions or donor-exclusive ordinary software features. Model redistribution depends on compatible rights and practical constraints. Voluntary financial support sustains development without purchasing privileged access.
+
+**Imported content safety:** PDF and other user-provided files can be damaged or malicious. DataVaultAI is **not** an antivirus scanner or OS sandbox; successful import does not certify a file as safe. The project will document security boundaries, apply hostile-input testing and provide a release notice. Warranty and liability limitations are subject to the license and applicable law; an advisory notice never replaces technical safeguards.
+
+**Status:** No public source-code release or installable distribution is available yet. Semantic exclusion diagnostics, the planned two-profile distribution and future web ingestion are not currently shipped. These requirements will be qualified against the eventual M9 release candidate and stabilized within the scope accepted for M10.
+
 ## The First Use Case: Tabletop RPG Research
 
 DataVaultAI began with a concrete research problem: navigating large, fragmented tabletop role-playing game libraries.
