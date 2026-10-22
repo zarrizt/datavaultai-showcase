@@ -1,12 +1,13 @@
-Voici l'intégralité du rapport de développement public n° 1 de DataVaultAI, dans sa version anglaise originale, directement dans le chat.
-
-Je conserve son contenu et sa structure, sans résumé ni réécriture. Il s'agit toujours d'une version prépublication, en attente de ta validation.
-
 # DataVaultAI: Development Report No. 1
 
 ## Architecture, Engineering Methodology, and the Limits of AI-Assisted Development
 
-Document status: Public-report draft, awaiting owner approval Reporting date: October 21, 2026 Project: DataVaultAI (provisional product name: Scrollpendium) Author: Zarrizt Development model: Independent, self-taught, human-directed and AI-assisted Source availability: Development repository currently private; no public software release yet
+**Document status:** Published development report  
+**Reporting date:** October 21, 2026  
+**Project:** DataVaultAI (provisional product name: Scrollpendium)  
+**Author:** Zarrizt  
+**Development model:** Independent, self-taught, human-directed and AI-assisted  
+**Source availability:** Private development repository; no public software release yet
 
 > A note on evidence: This report is based on the project's internal architecture, status, implementation guidance, and development records. The source code and underlying test artifacts are not yet public, so external readers cannot independently reproduce the reported results today. Documented implementation, laboratory experiments, planned features, and research ambitions are distinguished throughout. This is a development report, not a security certification or release announcement.
 
