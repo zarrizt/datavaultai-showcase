@@ -39,7 +39,7 @@ Future semantic capabilities are intended to extend the archive, not replace its
 
 **Evidence-based results · Resilience · Privacy protection · Modularity · Open source · Free forever.**
 
-These commitments define what DataVaultAI is designed to earn through verification, not a claim that every planned capability is already qualified. The [Product Trust Charter](docs/PRODUCT_TRUST_CHARTER.md) in the **private development repository** is the current owner-approved qualification record; the public summary below does not disclose private source code or internal laboratory evidence.
+These commitments define what DataVaultAI is designed to earn through verification, not a claim that every planned capability is already qualified. The **Product Trust Charter** in the private development repository is the current owner-approved qualification record; the public summary below does not disclose private source code or internal laboratory evidence.
 
 - **Evidence-based results:** verify source identity and freshness, distinguish original evidence from interpretations, and plan a clearly separated diagnostic view for excluded semantic candidates.
 - **Resilience:** prevent silent data loss, preserve committed state and allow only bounded, demonstrably safe automatic recovery.
