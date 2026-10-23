@@ -74,7 +74,7 @@ Tabletop RPG research is the original niche, not the intended limit. Similar sou
 
 ## Development Status
 
-**Active development. Private source repository. No public release available yet.**
+**Active development. This public showcase contains neither the application's source code nor an installable release; the development source remains private.**
 
 The core archival, document-processing, lexical-search, and note-management foundations have been implemented.
 
@@ -83,8 +83,6 @@ Current M6 work focuses on the persistence foundations and experimental validati
 Real embedding production and semantic retrieval are not yet integrated into the application.
 
 This public repository is a project showcase and development record.
-
-**It does not currently contain the application's source code or an installable release.**
 
 ## The Experiment Behind the Software
 
