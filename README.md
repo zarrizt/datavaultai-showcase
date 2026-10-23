@@ -1,8 +1,6 @@
 # DataVaultAI
 ### Scrollpendium | Provisional Product Name
 
-**Built for evidence. Designed for resilience. Grounded in privacy. Open by principle. Modular by design. Free by commitment.**
-
 DataVaultAI aims to make trustworthy, source-grounded research accessible to everyone, without mandatory cloud services, proprietary lock-in, or financial barriers.
 
 *These are guiding commitments. Their technical guarantees will be qualified through documented testing and release review; not all planned protections or capabilities are implemented yet.*
