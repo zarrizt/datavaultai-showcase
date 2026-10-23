@@ -80,8 +80,6 @@ Current M6 work focuses on the persistence foundations and experimental validati
 
 Real embedding production and semantic retrieval are not yet integrated into the application.
 
-This public repository is a project showcase and development record.
-
 ## The Experiment Behind the Software
 
 I'm developing DataVaultAI as a self-taught amateur, with substantial assistance from AI tools.
