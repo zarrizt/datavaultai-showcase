@@ -48,8 +48,6 @@ These commitments define what DataVaultAI is designed to earn through verificati
 
 **Imported content safety:** PDF and other user-provided files can be damaged or malicious. DataVaultAI is **not** an antivirus scanner or OS sandbox; successful import does not certify a file as safe. The project will document security boundaries, apply hostile-input testing and provide a release notice. Warranty and liability limitations are subject to the license and applicable law; an advisory notice never replaces technical safeguards.
 
-**Status:** No public source-code release or installable distribution is available yet. Semantic exclusion diagnostics, the planned two-profile distribution and future web ingestion are not currently shipped. These requirements will be qualified against the eventual M9 release candidate and stabilized within the scope accepted for M10.
-
 ## The First Use Case: Tabletop RPG Research
 
 DataVaultAI began with a concrete research problem: navigating large, fragmented tabletop role-playing game libraries.
