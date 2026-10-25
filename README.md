@@ -126,6 +126,16 @@ Financial support will not purchase exclusive access to ordinary free-software f
 
 No sponsorship or payment mechanism is currently operational.
 
+## Evidence and disclosure boundaries
+
+Public development reports describe dated checkpoints, not the current
+qualification state. Internal test results are reported as internal evidence,
+not independently reproducible public certifications. Published examples should
+use synthetic data and omit credentials, private archive contents, personally
+identifying local paths and unnecessarily sensitive environment details.
+Historical reports remain unchanged; later milestones require separately dated
+updates rather than retroactive edits.
+
 ## Development Reports
 
 I document the project's technical progress, architectural decisions,
