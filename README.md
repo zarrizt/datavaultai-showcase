@@ -142,6 +142,7 @@ I document the project's technical progress, architectural decisions,
 engineering methodology, and experimental findings.
 
 - [Development Report No. 1 | Architecture, Engineering Methodology, and AI-Assisted Development (October 21, 2026)](reports/2026-10-21-development-methodology.md)
+- [Development Report No. 2 | Milestone 6 Progress Checkpoint (October 26, 2026)](reports/2026-10-26-m6-progress-checkpoint.md)
 
 Reports distinguish implemented capabilities, experimental findings,
 and future objectives. Internal test results are identified as such
