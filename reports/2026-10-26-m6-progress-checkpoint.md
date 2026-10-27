@@ -15,7 +15,7 @@
 
 My first report, published October 21, 2026, described the architecture of DataVaultAI and the methodology I have been learning to use while developing it. The emphasis was on understanding the problem, documenting constraints, deciding how to assess evidence and keeping the person directing the project responsible for its direction.
 
-Five days later, Milestone 6 has changed meaningfully. We have progressed beyond database preparations and isolated semantic-model experiments to two merged implementation slices: deterministic segmentation of actual source text and an optional, offline multilingual encoder capable of producing real numerical vectors on a CPU.
+Five days later, Milestone 6 has changed meaningfully. The work has moved beyond database preparations and isolated semantic-model experiments to two merged implementation slices: deterministic segmentation of actual source text and an optional, offline multilingual encoder capable of producing real numerical vectors on a CPU.
 
 That is enough to justify a detailed report, even though semantic search is not yet an available user feature.
 
@@ -69,7 +69,7 @@ Milestone 6.1 added database structures for semantic generations, manifests and 
 
 Those foundations matter, but they are not the same as an indexing worker. A database table capable of storing embeddings does not mean the application can safely populate it, and a revision token does not by itself prove that a future writer will check it at the correct moment.
 
-### A factual checkpoint table
+### Progress at this checkpoint
 
 | Development slice | Present state | What it does not establish |
 | --- | --- | --- |
@@ -80,7 +80,7 @@ Those foundations matter, but they are not the same as an indexing worker. A dat
 | M6.3-B | Optional offline E5 tokenizer and original ONNX CPU encoder | A production semantic indexing worker |
 | M6 producer and retrieval | **Not implemented** | No semantic/hybrid search UI or active generation |
 
-M6.3-A and M6.3-B were merged into the private development branch through two reviewed pull requests. No additional external model backend or mandatory cloud service was introduced into the archival core.
+M6.3-A and M6.3-B were merged into the private repository's `main` branch through two reviewed pull requests. No additional external model backend or mandatory cloud service was introduced into the archival core.
 
 ## 4. First engineering step: the segmentation problem
 
@@ -226,19 +226,19 @@ None of these steps has been completed just because the E5 adapter can produce a
 
 One reason this project exists is to learn Python and systems development while building something I genuinely want to use.
 
-My role is not to pretend that I personally hand-wrote every line of the implementation. Coding agents can perform large parts of that labor. My responsibility is to understand the constraints, challenge assumptions, decide which tradeoffs are acceptable, insist on evidence, and stop when an operation goes beyond the scope I approved.
+I don't write every line of DataVaultAI myself. Coding agents help with implementation, while I remain responsible for understanding the constraints, challenging assumptions, choosing acceptable tradeoffs and deciding which evidence is sufficient before moving forward.
 
 This milestone has made that relationship more concrete. When a test failed, the next question was not merely "How do we make it green?" It was "What property was the test supposed to establish, and did the test even measure that property?" When the tokenizer behaved unexpectedly, the answer was not to silently repair the source text. It was to distinguish information loss in the original archive from rejection of a derived computation.
 
 I use a sequence that has become increasingly useful: understand the problem, form hypotheses, justify an approach, implement a bounded slice, test both ordinary and adverse cases, preserve failures, and reconcile the documentation with what actually happened.
 
-The human-versus-AI division is not an argument that human judgments are infallible. It is an insistence that there be an accountable place where decisions are made, questioned and revisited.
+Keeping decisions in human hands does not make those decisions infallible. It makes responsibility visible and gives me a place to question a choice, change course or stop.
 
 ## 12. Current verdict and next report
 
 **Milestone 6 remains in progress.** Its storage foundations, source-invalidation safeguards, deterministic segmentation and real offline CPU encoder constitute a meaningful implementation advance. They do not yet constitute a semantic-search product.
 
-The next report should follow a new observable boundary, not just the passage of time: ideally a guarded, explicitly invoked producer that can publish complete, source-current derived representations in a disposable or suitably controlled environment, with transparent outcomes under interruption and concurrent change. That work requires its own authorization and qualification.
+I want the next report to mark an observable engineering result rather than simply another date: ideally an explicitly invoked producer that can publish complete, source-current derived representations in a controlled environment and report interruptions and concurrent changes truthfully. That work requires its own authorization and qualification.
 
 I also intend to make appropriate development evidence easier to inspect when it can be shared without disclosing private source data or distributing unreviewed third-party model artifacts. Today, numerical results in this report remain internally documented rather than publicly reproducible.
 
@@ -250,4 +250,4 @@ The original sources remain authoritative. The code has to earn every further cl
 
 ### Reporting provenance and exclusions
 
-This report was prepared October 26, 2026, using internal project status and architecture records, merged M6.3-A/B source and PR evidence, the documented M6 laboratory record and focused local qualification reports. It neither executed new tests nor inspected unreleased third-party model distribution rights. No private archive data, local paths, raw corpus fixtures, private GitHub source, model weights or internal evidence packages are included here. The previous Development Report No. 1 remains unchanged.
+Prepared October 26, 2026, from internal status and architecture records, merged M6.3-A/B code and PR reviews, the M6 laboratory record and focused local qualification reports. No tests were run to prepare this editorial report, and third-party distribution rights were not newly audited. Private archive materials, local paths, source code, raw test fixtures, model weights and internal evidence packages are not included.
