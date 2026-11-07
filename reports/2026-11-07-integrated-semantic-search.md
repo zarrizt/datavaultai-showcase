@@ -9,7 +9,7 @@
 **Development model:** Independent, self-taught, human-directed and AI-assisted  
 **Source availability:** Private development repository; no public software release yet
 
-> **Evidence note.** This report describes the project's documented implementation and internal qualification results as of November 7, 2026. Some tests were executed at earlier checkpoints, primarily in late October. The private source code, test fixtures and historical execution artifacts are not included in this showcase. Reported test results are therefore not independently reproducible by public readers. This is a development report, not a production-readiness statement, independent security certification or release announcement.
+> The implementation and test results described here come from a private development repository. Many of the tests were run in late October. Because the source code and raw test records are not yet public, readers cannot independently reproduce these results from the showcase. DataVaultAI has not been released or certified for production use.
 
 ## 1. Why this update matters
 
@@ -23,7 +23,7 @@ DataVaultAI now has implemented paths for bounded semantic indexing, interruptio
 
 The application has therefore moved beyond isolated semantic components toward an integrated, locally operated retrieval workflow.
 
-**This is an implementation milestone, not the final qualification of Milestone 6.**
+**That is real progress, though Milestone 6 is not finished.**
 
 ## 2. What has changed since October 26?
 
@@ -38,13 +38,13 @@ The application has therefore moved beyond isolated semantic components toward a
 | Generation coverage assessment | Implemented |
 | Atomic generation selection and rollback | Implemented |
 | Browser lexical, semantic and hybrid search | Implemented |
-| Full integrated M6 acceptance | Outstanding |
+| Complete end-to-end M6 testing | Still in progress |
 | Conversational answering and RAG orchestration | Not implemented |
 | Public software release | Not available |
 
 The SQLite schema has advanced to version 10, with additive support for durable indexing and explicit generation selection.
 
-The distinction between implemented functionality and qualified deployment remains significant. These features exist in the private development application, but their supported operating envelope has not yet received complete integrated acceptance.
+These features exist in the private development build, but I have not finished testing how reliably they behave across realistically sized document libraries and different environments.
 
 ## 3. A working semantic retrieval path
 
@@ -84,9 +84,9 @@ An embedding does not rewrite the original document. A search score does not det
 
 The sequential producer connects source discovery, the existing segmentation policy, the verified E5 adapter and SQLite persistence.
 
-Its recorded real-model integration exercised three synthetic source units, including initial persistence, reuse of a valid existing representation without inference, and rebuilding after a source correction and invalidation.
+In a focused test, the real encoder processed three synthetic source units. The test covered initial persistence, reuse of a valid stored representation without recomputing it, and rebuilding that representation after a source correction.
 
-This is meaningful evidence that the components can cooperate. It is not a corpus-scale benchmark or evidence that arbitrary collections can be processed within a guaranteed resource budget.
+It showed that these components can work together. It did not tell me how the system would perform on a large library or how much computing capacity it would need in everyday use.
 
 ### Indexing that can be resumed
 
@@ -94,9 +94,9 @@ A new indexing layer records generation-specific progress and unit outcomes.
 
 Work can be resumed explicitly after interruption. Completed compatible representations may be reused, while failed or excluded units remain visible rather than disappearing behind a progress cursor.
 
-Saved progress observations are not themselves proof that an embedding is still valid. Current source identity, text revisions and stored representations remain subject to validation.
+A recorded "complete" state is not enough on its own: the application must still check whether the source text has changed and whether the stored representation remains valid.
 
-There is no autonomous background scheduler or general-purpose distributed job service. Indexing remains an explicit, bounded local operation.
+For now, indexing is started manually and works in limited batches. It does not yet run as a background service.
 
 ## 4. Choosing which semantic generation to use
 
@@ -114,7 +114,7 @@ The application also supports an explicit lexical-only state.
 
 This means that semantic functionality is not an unavoidable condition for using DataVaultAI. The document archive and literal search remain available independently of a valid semantic generation or working model environment.
 
-The implemented rollback and selection protocols have been exercised with controlled failure scenarios. Their qualification does not establish unrestricted durability under sudden power loss or every possible native runtime failure.
+Controlled tests exercised selection and rollback when operations fail or overlap. Sudden power loss and failures deep inside native libraries remain outside what those tests established.
 
 ## 5. Three search modes in the browser
 
@@ -184,21 +184,19 @@ The last phase of development also included independent laboratory investigation
 
 The experiments examined document-processing packages, Python runtime configurations, ONNX Runtime behavior and saved package metadata.
 
-Historical reports and their inventoried file payloads have been preserved in a separate local evidence collection. A subsequent documentation review consolidated their scope, findings and unresolved limitations.
+I kept the original lab reports and their associated files in a separate private evidence collection. Reviewing them together helped clarify what the records supported and which questions remained open.
 
-The laboratory campaign did not authorize new production dependencies.
+None of these experiments led to changing the application's approved dependencies.
 
 Some comparisons were successful within their tested conditions. Others remained inconclusive or lacked important reference material. Security reproduction, real OCR coverage, historical vector comparisons and broader runtime guarantees were not established by those limited experiments.
 
 One later package investigation remained at the metadata-inspection stage, with further qualification pending.
 
-The overall disposition was:
-
-**`EXPERIMENTAL_ONLY | NO_PROMOTION`**
+The findings remain experimental. They are not a recommendation to use those alternatives in the application.
 
 This distinction matters. Preserving a test report is not the same as being able to reproduce its environment, and reproducing a narrow result is not the same as proving a dependency suitable for deployment.
 
-The historical evidence remains outside the public showcase. This report does not claim that external readers can reproduce those experiments from the published narrative.
+The original evidence remains private; this public summary explains the conclusions and their limits without presenting them as independently verified.
 
 ## 9. The development methodology is changing too
 
@@ -212,7 +210,7 @@ My working process increasingly follows a deliberate rhythm:
 
 **Understand the problem → formulate hypotheses → compare approaches → choose a bounded strategy → test → examine the results → refine.**
 
-The human participant retains responsibility for objectives, acceptable risks and architectural decisions. AI tools contribute analysis, implementation proposals, comparative reasoning and review, but their agreement is not independent evidence.
+I remain responsible for the project's goals, the risks I'm willing to take and the architectural decisions I approve. AI tools help me investigate alternatives, review code and test assumptions, but agreement between models isn't independent evidence.
 
 Some of the most valuable moments have occurred when an apparently reasonable test was contradicted by actual execution.
 
@@ -228,13 +226,13 @@ DataVaultAI is a practical case study for exploring that question, not proof tha
 
 The remaining challenge is less about adding another isolated component and more about qualifying the complete search product and its lifecycle.
 
-The project still requires an integrated acceptance assessment covering realistic supported collection sizes, retrieval relevance, interruption and recovery behavior, generation replacement, incomplete coverage, resource consumption, offline operation, dependency identity and failure isolation.
+Before calling M6 complete, I still need to test the entire search experience under realistic conditions: how well it finds relevant passages, what happens when indexing is interrupted, whether replacement and rollback work as expected, how incomplete coverage is shown, and what the system costs in memory, CPU time and storage. Offline operation, dependency integrity and failure isolation also need to be checked together.
 
 Meaningful limits must be measured rather than inferred from synthetic test guards. Correctness in a small controlled corpus cannot automatically be extrapolated to a large personal library.
 
-There is also no basis yet for treating the current application as a publicly supported deployment.
+I am not treating the current build as a publicly supported release.
 
-Milestone 7, conversational answers, retrieval-augmented generation and autonomous-agent features remain outside the present implementation.
+Conversational answers, retrieval-augmented generation and more autonomous functions are future ambitions, not features of the current application.
 
 ## 11. Closing reflection
 

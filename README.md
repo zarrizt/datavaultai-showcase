@@ -3,7 +3,7 @@
 
 DataVaultAI aims to make trustworthy, source-grounded research accessible to everyone, without mandatory cloud services, proprietary lock-in, or financial barriers.
 
-*These are guiding commitments. Their technical guarantees will be qualified through documented testing and release review; not all planned protections or capabilities are implemented yet.*
+*These commitments guide development. Some capabilities are already implemented; others still need testing or remain planned.*
 
 **Preserve the sources. Organize knowledge. Retain intellectual autonomy.**
 
@@ -39,7 +39,7 @@ Semantic capabilities extend the archive without replacing its foundations.
 
 ## Our Six Commitments
 
-These commitments define what DataVaultAI is designed to earn through verification, not a claim that every planned capability is already qualified. The public summary below does not disclose private source code or internal laboratory evidence.
+These are the principles I want the software to uphold. They shape what I build, what I test and what I am willing to call reliable.
 
 - **Evidence-based results:** verify source identity and freshness, distinguish original evidence from interpretations, and plan a clearly separated diagnostic view for excluded semantic candidates.
 - **Resilience:** prevent silent data loss, preserve committed state and allow only bounded, demonstrably safe automatic recovery.
@@ -68,7 +68,7 @@ The intended approach is to extract relevant knowledge, classify its provenance 
 
 For example, a rulebook passage, an official clarification, a community-wiki explanation, a forum discussion, and a personal house rule should remain distinguishable. They may be related, but they do not carry the same evidentiary authority.
 
-Future web references should retain source links and available metadata, identify uncertainty, and be reviewed before becoming durable archive knowledge. The goal is **traceable knowledge extraction, not indiscriminate website mirroring**: respect applicable rights and access restrictions, and prefer structured facts, genuinely transformed notes, and permitted short excerpts over copying entire pages. Web access should be explicit and optional; the local archive should remain useful offline.
+Eventually, I want web references to keep their original links, context and any uncertainty visible. The goal is **traceable knowledge extraction, not indiscriminate website mirroring**. That also means respecting authors' rights and access restrictions rather than copying entire pages. Web access would be optional; the archive should remain useful offline.
 
 **This web-ingestion and classification workflow is not implemented yet.** Existing project and note features operate on locally imported documents. Website, wiki, and forum integration belongs to the future roadmap.
 
@@ -132,15 +132,9 @@ Financial support will not purchase exclusive access to ordinary free-software f
 
 No sponsorship or payment mechanism is currently operational.
 
-## Evidence and disclosure boundaries
+## Reading the Development Reports
 
-Public development reports describe dated checkpoints, not the current
-qualification state. Internal test results are reported as internal evidence,
-not independently reproducible public certifications. Published examples should
-use synthetic data and omit credentials, private archive contents, personally
-identifying local paths and unnecessarily sensitive environment details.
-Historical reports remain unchanged; later milestones require separately dated
-updates rather than retroactive edits.
+Each report captures a particular point in the project, including the experiments that worked and those that did not. The source code and raw test records are still private, so the results described here have not been independently reproduced by readers. Older reports stay available as a record of how the project evolved.
 
 ## Development Reports
 
@@ -151,13 +145,11 @@ engineering methodology, and experimental findings.
 - [Development Report No. 2 | Milestone 6 Progress Checkpoint (October 26, 2026)](reports/2026-10-26-m6-progress-checkpoint.md)
 - [Development Report No. 3 | From Local Embeddings to Integrated Semantic Search (November 7, 2026)](reports/2026-11-07-integrated-semantic-search.md)
 
-Reports distinguish implemented capabilities, experimental findings,
-and future objectives. Internal test results are identified as such
-until their evidence becomes publicly reproducible.
+I publish these reports to make the reasoning visible alongside the code: what changed, why I made those choices and what remains uncertain.
 
 ## The Road Ahead
 
-The immediate priority is to consolidate a dependable local archival foundation before introducing increasingly sophisticated AI capabilities.
+The immediate priority is to test the new search experience with realistic document collections, measure its limits and resolve the remaining M6 acceptance questions before considering a public release.
 
 Future work will be guided by reproducible evidence, clearly documented limitations, and explicit decisions about what the software should and should not become.
 
