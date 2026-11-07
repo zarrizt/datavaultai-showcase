@@ -28,10 +28,14 @@ Its purpose is to preserve original documents, reconstruct their contents, maint
 - Markdown research notes and project organization.
 - Explicit relationships between notes and their supporting sources.
 - Review history and traceable corrections.
+- Optional offline multilingual E5 embedding production.
+- Explicit, resumable semantic indexing with source-revision checks.
+- Atomic semantic generation selection and rollback.
+- Browser-based Lexical, Semantic, and Hybrid search modes, with source provenance and visible coverage limitations.
 
 The archival system is designed to remain useful without AI.
 
-Future semantic capabilities are intended to extend the archive, not replace its foundations.
+Semantic capabilities extend the archive without replacing its foundations.
 
 ## Our Six Commitments
 
@@ -72,13 +76,15 @@ Tabletop RPG research is the original niche, not the intended limit. Similar sou
 
 ## Development Status
 
-**Active development. This public showcase contains neither the application's source code nor an installable release; the development source remains private.**
+**Status as of November 7, 2026: Active development. No public software release is available, and the development source remains private.**
 
-The core archival, document-processing, lexical-search, and note-management foundations have been implemented.
+The archival foundation includes multi-format document ingestion, local OCR, original-file preservation, lexical search, provenance-aware reviews and research notes.
 
-Current M6 work focuses on the persistence foundations and experimental validation needed for future local semantic representations.
+Milestone 6 now includes optional local E5 embedding production, explicit resumable indexing, generation selection and rollback, and browser-based Lexical, Semantic, and Hybrid search.
 
-Real embedding production and semantic retrieval are not yet integrated into the application.
+These capabilities have been exercised in controlled internal tests. Full integrated Milestone 6 acceptance, realistic supported-envelope qualification and public release readiness remain outstanding.
+
+Semantic capabilities are optional. Archival access, human-authored notes and lexical search remain independent of the local AI environment.
 
 ## The Experiment Behind the Software
 
@@ -143,6 +149,7 @@ engineering methodology, and experimental findings.
 
 - [Development Report No. 1 | Architecture, Engineering Methodology, and AI-Assisted Development (October 21, 2026)](reports/2026-10-21-development-methodology.md)
 - [Development Report No. 2 | Milestone 6 Progress Checkpoint (October 26, 2026)](reports/2026-10-26-m6-progress-checkpoint.md)
+- [Development Report No. 3 | From Local Embeddings to Integrated Semantic Search (November 7, 2026)](reports/2026-11-07-integrated-semantic-search.md)
 
 Reports distinguish implemented capabilities, experimental findings,
 and future objectives. Internal test results are identified as such
